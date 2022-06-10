@@ -1,0 +1,15 @@
+// login requst
+{"request":"login","data":{"username":"shopaky","password":"123456"}}\r
+// invite player Request
+{"request":"game invitation","data":{"invitationSender":"ayman","invitationReciever":"shopaky"}}
+// accept invitation
+{"request":"acceptInvitation","data":{"invitationSender":"ayman","invitationReciever":"shopaky"}}
+// xChoosen or o
+{"request":"XorOChoise","data":{"invitationSender":"ayman","invitationReciever":"shopaky","choise":"X"}}
+// send move
+{"request":"multiMove","data":{"gameId":"998ce469-612c-4c32-9c4b-7fa2dfb5fbc5","index":"0"}}
+
+// single mode game test
+
+{"request":"play single mode game","data":{"difficulty":"easy","choice":"X"}}
+{"request":"singleMove","data":{"gameId":"e0e06df6-5f3f-4f76-94fd-cbe698441e5f","index":"0"}}

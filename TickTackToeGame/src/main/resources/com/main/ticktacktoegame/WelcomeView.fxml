@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" styleClass="body" stylesheets="@styles/welcome.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.ticktacktoegame.Controllers.WelcomeController">
+    <children>
+        <Button layoutX="1426.0" layoutY="223.0" mnemonicParsing="false" onAction="#switchToOnlineView" prefHeight="106.0" prefWidth="289.0" styleClass="onlineBtn">
+        </Button>
+        <Pane layoutX="51.0" layoutY="78.0" prefHeight="90.0" prefWidth="275.0">
+            <ImageView fitHeight="78.0" fitWidth="261.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/Rectangle%203.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="275.0" layoutX="1.0" layoutY="6.0" pickOnBounds="true">
+                <image>
+                    <Image url="@images/upperContainer.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="67.0" layoutX="17.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/playerIcon.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="usernameLabel" layoutX="113.0" layoutY="26.0" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="28.0" />
+                </font>
+            </Label>
+        </Pane>
+        
+        <Pane layoutX="402.0" layoutY="78.0" prefHeight="90.0" prefWidth="275.0">
+            <ImageView fitHeight="78.0" fitWidth="261.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/Rectangle%203.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="275.0" layoutX="1.0" layoutY="6.0" pickOnBounds="true">
+                <image>
+                    <Image url="@images/upperContainer.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="67.0" layoutX="23.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/pointsIcon.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="bonusPointsLabel" layoutX="104.0" layoutY="26.0" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="28.0" />
+                </font>
+            </Label>
+        </Pane>
+        
+        <Pane layoutX="800.0" layoutY="85.0" prefHeight="90.0" prefWidth="307.0">
+         
+            <ImageView fitHeight="103.0" fitWidth="314.0" layoutX="8.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/Rectangle%203.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="307.0" layoutX="14.0" layoutY="-16.0" pickOnBounds="true">
+                <image>
+                    <Image url="@images/upperContainer.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="68.0" fitWidth="67.0" layoutX="27.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/historyIcon.png" />
+                </image>
+            </ImageView>
+            <Label fx:id="rankLabel" layoutX="94.0" layoutY="14.0" prefHeight="40.0" prefWidth="199.0" text="Grand Master" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+        </Pane>
+        
+        <Pane layoutX="1219.0" layoutY="78.0" prefHeight="90.0" prefWidth="275.0">   
+            <ImageView fitHeight="78.0" fitWidth="261.0" layoutX="8.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/Rectangle%203.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="275.0" layoutX="1.0" layoutY="6.0" pickOnBounds="true">
+                <image>
+                    <Image url="@images/upperContainer.png" />
+                </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="53.0" layoutX="31.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/exitIcon.png" />
+                </image>
+            </ImageView>
+            <Button layoutX="84.0" layoutY="12.0" minHeight="54.0" minWidth="69.0" mnemonicParsing="false" onAction="#exit" prefHeight="71.0" prefWidth="147.0" styleClass="exitBtn" text="Logout" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Button>     
+        </Pane>
+        
+        <Pane layoutX="210.0" layoutY="263.0" prefHeight="457.0" prefWidth="1159.0" styleClass="mainContainer">
+            <Label layoutX="175.0" layoutY="73.0" styleClass="fontStyle" text="WELCOME BACK ," textFill="#cf3ee8">
+                <font>
+                    <Font name="System Bold" size="70.0" />
+                </font>
+            </Label>
+            <Label fx:id="usernameWelcomeLabel" layoutX="790.0" layoutY="73.0" textFill="#00b4ff">
+                <font>
+                    <Font name="System Bold" size="70.0" />
+                </font>
+            </Label>
+            <Label layoutX="341.0" layoutY="190.0" prefHeight="71.0" prefWidth="566.0" text="start playing and strike again" textAlignment="CENTER" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="38.0" />
+                </font>
+            </Label>
+            <Button layoutX="622.0" layoutY="314.0" mnemonicParsing="false" onAction="#switchToSingleMode" prefHeight="83.0" prefWidth="283.0" styleClass="playBtn">
+            </Button>
+
+         <Button layoutX="222.0" layoutY="314.0" mnemonicParsing="false" onAction="#switchToChooseHistoryModeView" prefHeight="83.0" prefWidth="283.0" styleClass="historyBtn">
+         </Button>
+        </Pane>
+      <Button fx:id="soundBtn" layoutX="1463.0" layoutY="338.0" mnemonicParsing="false" onAction="#toogleAudio" prefHeight="40.0" prefWidth="42.0" styleClass="muteSound" />
+    </children>
+</AnchorPane>
